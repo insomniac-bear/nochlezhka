@@ -82,6 +82,7 @@ const popupDonate = document.querySelector('.popup_type_donate')
 const closeDonateButton = popupDonate.querySelector('.popup__donate-close-button')
 const sumOfMoneyButton = popupDonate.querySelectorAll('.popup__sum-of-money')
 const inputSum = popupDonate.querySelector('.popup__sum-of-money-input')
+const inputEmail = popupDonate.querySelector('.popup__email-input')
 const header = document.querySelector('.header')
 
 function openPopup (popup) {
@@ -179,6 +180,21 @@ const donateFormElement = document.querySelector('.popup__donate-form');
 
 donateFormElement.addEventListener('submit', (evt) => {
   evt.preventDefault();
+  sendData();
   closePopup(popupDonate);
   donateFormElement.reset();
 });
+
+const sendData = () => {
+  const email = inputEmail.value;
+  const paymentMethod = popupDonate.querySelector('input[type=radio]:checked').value;
+  let donationAmount;
+
+  if (inputSum.value){
+    donationAmount = inputSum.value;
+  } else {
+    donationAmount = popupDonate.querySelector('.popup__sum-of-money_active').value;
+  }
+
+  console.log(`Сумма пожертвования: ${donationAmount}, Email: ${email}, Способ оплаты: ${paymentMethod}`);
+};
