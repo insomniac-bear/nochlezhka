@@ -49,6 +49,7 @@
 @import url(../blocks/events/__card-detail/events__card-detail.css);
 
 @import url(../blocks/footer/footer.css);
+@import url(../blocks/footer/__theme/_white/footer__theme_white.css);
 @import url(../blocks/footer/__wrapper/footer__wrapper.css);
 @import url(../blocks/footer/__illustration/footer__illustration.css);
 @import url(../blocks/footer/__block-container/footer__block-container.css);
