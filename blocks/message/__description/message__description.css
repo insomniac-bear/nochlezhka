@@ -1,0 +1,9 @@
+.message__description {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 100%;
+  color: #3b3748;
+  max-width: 420px;
+  margin: 0 0 30px 0;
+}
