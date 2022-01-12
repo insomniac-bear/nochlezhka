@@ -1,4 +1,7 @@
 .main-screen_page_help {
+min-height: 632px;
+  background-color: #7100FF;
+  max-width: 100%;
   background-image: url(../../../images/help_background.svg);
   background-size: 385.88px 301.47px;
   background-position: 73% center;
