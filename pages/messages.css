@@ -30,6 +30,7 @@
 @import url(../blocks/main-screen/main-screen.css);
 
 @import url(../blocks/message/__description/message__description.css);
+@import url(../blocks/message/__description/_page/message__description_page_404.css);
 
 @import url(../blocks/events/events.css);
 @import url(../blocks/events/__wrapper/events__wrapper.css);
