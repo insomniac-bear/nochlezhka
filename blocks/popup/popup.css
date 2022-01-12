@@ -9,6 +9,6 @@
   z-index: 0;
   overflow: hidden;
   height: 0;
-  opacity: 1;
+  opacity: 0;
   transition: height 0s .4s linear, opacity .4s 0s linear;
 }
