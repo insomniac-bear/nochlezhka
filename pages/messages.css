@@ -32,6 +32,7 @@
 @import url(../blocks/main-screen/_page/main-screen_page_help.css);
 
 @import url(../blocks/message/__title/message__title.css);
+@import url(../blocks/message/__title/_page/message__title_page_404.css);
 
 @import url(../blocks/message/__description/message__description.css);
 @import url(../blocks/message/__description/_page/message__description_page_404.css);
