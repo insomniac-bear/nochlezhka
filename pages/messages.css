@@ -35,6 +35,8 @@
 
 @import url(../blocks/message/__description/message__description.css);
 
+@import url(../blocks/main-screen/_page/main-screen_page_help.css);
+
 @import url(../blocks/events/events.css);
 @import url(../blocks/events/__wrapper/events__wrapper.css);
 @import url(../blocks/events/__title/events__title.css);
