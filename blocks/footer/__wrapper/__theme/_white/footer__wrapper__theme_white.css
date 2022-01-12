@@ -1,0 +1,8 @@
+@media screen and (min-width: 768px) {
+  .footer__wrapper__theme_white {
+    max-width: 1440px;
+    flex-direction: row;
+    background-color: #FCFAF7;
+    align-items: flex-start;
+  }
+}
