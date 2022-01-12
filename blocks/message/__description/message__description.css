@@ -7,11 +7,19 @@
   max-width: 420px;
   margin: 0 0 30px 0;
 }
-@media screen and (max-width: 360px) {
+
+@media screen and (max-width: 767px) {
+  .message__description {
+    font-size: 22px;
+    line-height: 110%;
+    max-width: 320px;
+  }
+}
+
+@media screen and (max-width: 533px) {
   .message__description {
     font-size: 20px;
     line-height: 120%;
     margin: 0 0 26px 0;
-    max-width: 320px;
   }
 }
