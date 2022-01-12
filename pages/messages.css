@@ -29,6 +29,8 @@
 
 @import url(../blocks/main-screen/main-screen.css);
 
+@import url(../blocks/message/__description/message__description.css);
+
 @import url(../blocks/events/events.css);
 @import url(../blocks/events/__wrapper/events__wrapper.css);
 @import url(../blocks/events/__title/events__title.css);
