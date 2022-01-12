@@ -1,0 +1,13 @@
+.main-screen_page_help {
+  background-image: url(../../../images/help_background.svg);
+  background-size: 385.88px 301.47px;
+  background-position: 73% center;
+  background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 768.98px) {
+  .main-screen_page_help {
+    min-height: 560px;
+    background-position: center 44px;
+  }
+}
