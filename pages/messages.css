@@ -27,6 +27,8 @@
 @import url(../blocks/header/__donate-text/header__donate-text.css);
 @import url(../blocks/header/_hidden/header_hidden.css);
 
+@import url(../blocks/main-screen/main-screen.css);
+
 @import url(../blocks/events/events.css);
 @import url(../blocks/events/__wrapper/events__wrapper.css);
 @import url(../blocks/events/__title/events__title.css);
