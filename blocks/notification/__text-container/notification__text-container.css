@@ -1,0 +1,15 @@
+.notification__text-container {
+  margin: auto;
+  margin-right: 0;
+  max-width: 420px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+@media screen and (max-width: 920px) {
+  .notification__text-container {
+    margin: auto;
+    grid-row-start: 2;
+    max-width: 320px;
+  }
+}

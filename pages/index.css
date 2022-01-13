@@ -154,3 +154,10 @@
 @import url(../blocks/footer/__list-element/footer__list-element.css);
 @import url(../blocks/footer/__social-icon/footer__social-icon.css);
 @import url(../blocks/footer/__title/footer__title.css);
+
+@import url(../blocks/notification/notification.css);
+@import url(../blocks/notification/__link/notification__link.css);
+@import url(../blocks/notification/__text-container/notification__text-container.css);
+@import url(../blocks/notification/__text/notification__text.css);
+@import url(../blocks/notification/__title/notification__title.css);
+@import url(../blocks/notification/__image/notification__image.css);
