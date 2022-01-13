@@ -79,10 +79,13 @@ const cityName = popupMenu.querySelector('.popup__city-name')
 const openDonateButtonInPopup = popupMenu.querySelector('.popup__open-donate-button')
 const openDonateButtonInHeader = document.querySelector('.header__donate-button')
 const popupDonate = document.querySelector('.popup_type_donate')
-const closeDonateButton = popupDonate.querySelector('.popup__donate-close-button')
+const popupBuyTicket = document.querySelector('.popup_type_buy-ticket')
+const closeDonatePopupButton = popupDonate.querySelector('.popup__close-button')
+const closePurchasePopupButton = popupBuyTicket.querySelector('.popup__close-button')
 const sumOfMoneyButton = popupDonate.querySelectorAll('.popup__sum-of-money')
-const inputSum = popupDonate.querySelector('.popup__sum-of-money-input')
-const inputEmail = popupDonate.querySelector('.popup__email-input')
+const inputDonationSum = popupDonate.querySelector('.popup__sum-of-money-input')
+const inputDonatorEmail = popupDonate.querySelector('.popup__email-input')
+const inputBuyerEmail = popupBuyTicket.querySelector('.popup__email-input')
 const header = document.querySelector('.header')
 
 function openPopup (popup) {
@@ -129,21 +132,25 @@ function getCheckedRadio () {
     if (item.checked) {
       cityName.textContent = item.value;
     }
-  })
+  });
 }
 
 openDonateButtonInPopup.addEventListener('click', function () {
   closePopup(popupMenu);
-  openPopup(popupDonate)
-})
+  openPopup(popupDonate);
+});
 
 openDonateButtonInHeader.addEventListener('click', function () {
-  openPopup(popupDonate)
+  openPopup(popupDonate);
 })
 
-closeDonateButton.addEventListener('click', function () {
-  closePopup(popupDonate)
-})
+closeDonatePopupButton.addEventListener('click', function () {
+  closePopup(popupDonate);
+});
+
+closePurchasePopupButton.addEventListener('click', function () {
+  closePopup(popupBuyTicket);
+});
 
 sumOfMoneyButton.forEach(function (item) {
   item.addEventListener('click', function () {
@@ -152,13 +159,13 @@ sumOfMoneyButton.forEach(function (item) {
     })
     item.classList.add('popup__sum-of-money_active')
   })
-})
+});
 
-inputSum.addEventListener('click', function () {
+inputDonationSum.addEventListener('click', function () {
   sumOfMoneyButton.forEach(function (item) {
-    item.classList.remove('popup__sum-of-money_active')
-  })
-})
+    item.classList.remove('popup__sum-of-money_active');
+  });
+});
 
 let prevScroll = window.scrollY;
 let curScroll;
@@ -180,21 +187,39 @@ const donateFormElement = document.querySelector('.popup__donate-form');
 
 donateFormElement.addEventListener('submit', (evt) => {
   evt.preventDefault();
-  sendData();
+  sendDonationData();
   closePopup(popupDonate);
   donateFormElement.reset();
 });
 
-const sendData = () => {
-  const email = inputEmail.value;
+const buyTicketForm = document.querySelector('.popup__buy-ticket-form');
+
+buyTicketForm.addEventListener('submit', (evt) => {
+  evt.preventDefault();
+  sendPurchaseData();
+  closePopup(popupBuyTicket);
+  buyTicketForm.reset();
+});
+
+const sendDonationData = () => {
+  const email = inputDonatorEmail.value;
   const paymentMethod = popupDonate.querySelector('input[type=radio]:checked').value;
   let donationAmount;
 
-  if (inputSum.value){
-    donationAmount = inputSum.value;
+  if (inputDonationSum.value){
+    donationAmount = inputDonationSum.value;
   } else {
     donationAmount = popupDonate.querySelector('.popup__sum-of-money_active').value;
   }
 
   console.log(`Сумма пожертвования: ${donationAmount}, Email: ${email}, Способ оплаты: ${paymentMethod}`);
+};
+
+const sendPurchaseData = () => {
+  const email = inputBuyerEmail.value;
+  const paymentMethod = popupBuyTicket.querySelector('input[type=radio]:checked').value;
+  // add data about amount of tickets
+  const amount = 1;
+
+  console.log(`Кол-во билетов: ${amount}, Email: ${email}, Способ оплаты: ${paymentMethod}`);
 };
