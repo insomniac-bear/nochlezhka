@@ -1,0 +1,14 @@
+.notification__image {
+  width: 385px;
+  height: 301px;
+  object-fit: cover;
+  object-position: center;
+  margin: auto 0;
+}
+@media screen and (max-width: 920px) {
+  .notification__image {
+    margin: 0 auto;
+    width: 316px;
+    height: 247px;
+  }
+}

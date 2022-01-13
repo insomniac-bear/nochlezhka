@@ -1,0 +1,18 @@
+.notification__text {
+  font-family: TT Firs Neue;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 24px;
+  margin: 0;
+  padding-top: 16px;
+  padding-bottom: 24px;
+}
+
+@media screen and (max-width: 920px) {
+  .notification__title {
+    font-size: 20px;
+    padding-top: 12px;
+    padding-bottom: 20px;
+  }
+}
