@@ -47,7 +47,7 @@
     <section class="main-screen main-screen_page_message" aria-label="Страница не найдена">
       <div class="message message_page_404">
         <h1 class="message__title message__title_page_404">ошибка 404</h1>
-        <p class="message__description">похоже, такой страницы не существует</p>
+        <p class="message__description message__description_page_404">похоже, такой страницы не существует</p>
         <a href="/" class="message__link message__link_color_black">на главную</a>
       </div>
     </section>
@@ -361,11 +361,13 @@
           <div class="popup__buy-ticket-amount"></div>
         </div>
         <p class="popup__buy-ticket-text">email</p>
-        <input type="email" name="email" placeholder="укажите почту для отправки чека" class="popup__email-input" required>
+        <input type="email" name="email" placeholder="укажите почту для отправки чека" class="popup__email-input"
+          required>
         <p class="popup__buy-ticket-text">способ оплаты</p>
         <fieldset class="popup__payment-method">
           <label for="bank-card" class="popup__payment-method-label">
-            <input type="radio" name="payment" id="bank-card" value="банковской картой" class="popup__form-radio" checked>
+            <input type="radio" name="payment" id="bank-card" value="банковской картой" class="popup__form-radio"
+              checked>
             <span class="popup__pseudo-item popup__pseudo-item_payment"></span>
             <span>банковской картой</span>
           </label>
