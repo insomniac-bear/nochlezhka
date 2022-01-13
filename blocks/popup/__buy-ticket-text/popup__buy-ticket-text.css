@@ -1,0 +1,22 @@
+.popup__buy-ticket-text {
+  margin: 16px auto;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  color: #3B3748;
+  max-width: 320px;
+  width: 100%;
+  text-align: left;
+}
+
+@media screen and (min-width: 768.98px) {
+  .popup__buy-ticket-text {
+    max-width: 532px;
+    margin: 32px auto 16px;
+    font-size: 32px;
+    line-height: 36px;
+  }
+  .popup__buy-ticket-text:first-of-type {
+    margin: 20px auto 16px;
+  }
+}
