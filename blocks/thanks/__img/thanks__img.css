@@ -1,0 +1,10 @@
+.thanks__img {
+  width: 386px;
+  margin: 0;
+}
+@media screen and (max-width: 600px) {
+  .thanks__img {
+    width: 316px;
+    margin-top: 39px;
+  }
+}

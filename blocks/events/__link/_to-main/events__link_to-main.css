@@ -1,0 +1,15 @@
+.events__link_to-main {
+  margin: 0;
+  padding: 12px 24px;
+  width: 95px;
+  color: #FCFAF7;
+  background-color: #7100FF;
+  border: 2px solid white;
+}
+
+@media screen and (max-width: 700px) {
+  .events__link_to-main {
+    padding: 10px 25px;
+    margin-top: 5px;
+  }
+}
