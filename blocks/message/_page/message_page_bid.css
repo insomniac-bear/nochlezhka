@@ -1,3 +1,9 @@
 .message_page_bid {
   background-image: url(../../../images/bid_background.svg);
 }
+
+@media screen and (max-width: 930px) {
+  .message_page_bid {
+    background-position: center 40px;
+  }
+}

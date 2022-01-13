@@ -1,3 +1,9 @@
 .message_page_help {
   background-image: url(../../../images/help_background.svg);
 }
+
+@media screen and (max-width: 930px) {
+  .message_page_help {
+    background-position: center 40px;
+  }
+}
