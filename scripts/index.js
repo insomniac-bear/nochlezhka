@@ -85,7 +85,7 @@ const closePurchasePopupButton = popupBuyTicket.querySelector('.popup__close-but
 const sumOfMoneyButton = popupDonate.querySelectorAll('.popup__sum-of-money')
 const inputDonationSum = popupDonate.querySelector('.popup__sum-of-money-input')
 const inputDonatorEmail = popupDonate.querySelector('.popup__email-input')
-const inputBuyerEmail = popupDonate.querySelector('.popup__email-input')
+const inputBuyerEmail = popupBuyTicket.querySelector('.popup__email-input')
 const header = document.querySelector('.header')
 
 function openPopup (popup) {
@@ -219,7 +219,7 @@ const sendPurchaseData = () => {
   const email = inputBuyerEmail.value;
   const paymentMethod = popupBuyTicket.querySelector('input[type=radio]:checked').value;
   // add data about amount of tickets
-  const amount = 500;
+  const amount = 1;
 
   console.log(`Кол-во билетов: ${amount}, Email: ${email}, Способ оплаты: ${paymentMethod}`);
 };
