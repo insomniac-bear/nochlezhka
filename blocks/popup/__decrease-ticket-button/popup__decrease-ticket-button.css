@@ -1,0 +1,23 @@
+.popup__decrease-ticket-button {
+  width: 48px;
+  height: 48px;
+  background: #7100ff;
+  background-image: url(../../../images/minus-icon-desktop.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+  border-radius: 22px 0px 0px 22px;
+  cursor: pointer;
+}
+
+.popup__decrease-ticket-button:hover {
+  background-color: #5100b8;
+}
+
+@media screen and (max-width: 767px) {
+  .popup__decrease-ticket-button {
+    width: 44px;
+    height: 44px;
+    background-image: url(../../../images/minus-icon-mobile.svg);
+  }
+}
