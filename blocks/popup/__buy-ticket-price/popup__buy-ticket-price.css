@@ -1,0 +1,14 @@
+.popup__buy-ticket-price {
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 1.08;
+  text-transform: lowercase;
+  color: #7100ff;
+}
+
+@media screen and (max-width: 767px) {
+  .popup__buy-ticket-price {
+    font-size: 32px;
+    line-height: 1.12;
+  }
+}

@@ -1,0 +1,39 @@
+.popup__ticket-amount-field {
+  display: block;
+  width: 96px;
+  height: 48px;
+  background: #fff;
+  border: 2px solid #7100ff;
+  border-radius: 0;
+  box-sizing: border-box;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 1.33;
+  text-align: center;
+  color: #96949e;
+  -moz-appearance: textfield;
+  -webkit-appearance: textfield;
+  appearance: textfield;
+}
+.popup__ticket-amount-field::-webkit-outer-spin-button,
+.popup__ticket-amount-field::-webkit-inner-spin-button {
+  display: none;
+}
+
+.popup__ticket-amount-field:focus {
+  outline: none;
+}
+
+.popup__ticket-amount-input_error {
+  border: 2px solid #f40934;
+}
+
+@media screen and (max-width: 767px) {
+  .popup__ticket-amount-field {
+    width: 48px;
+    height: 44px;
+    font-size: 16px;
+    line-height: 1.25;
+  }
+}
