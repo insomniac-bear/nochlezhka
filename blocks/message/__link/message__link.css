@@ -1,16 +1,14 @@
 .message__link {
+  display: inline-block;
   margin: 0;
-  padding: 12px 24px;
-
+  padding: 11px 22px;
   color: #fff;
   font-size: 18px;
   font-weight: 500;
   line-height: 1.33;
   text-decoration: none;
-
   border: 2px solid #fff;
   border-radius: 26px;
-
   box-sizing: border-box;
   transition: opacity ease .5s;
 }
