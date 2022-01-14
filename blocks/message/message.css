@@ -1,9 +1,7 @@
 .message {
-  margin: auto;
-  padding: 62px 0;
-
+  margin: 0 auto;
+  padding: 63px 0 59px;
   width: 880px;
-
   background-repeat: no-repeat;
   background-position: center right;
   background-size: contain;
