@@ -1,0 +1,23 @@
+.popup__increase-ticket-button {
+  width: 48px;
+  height: 48px;
+  background: #7100ff;
+  background-image: url(../../../images/plus-icon-desktop.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 0px 22px 22px 0px;
+  border: none;
+  cursor: pointer;
+}
+
+.popup__increase-ticket-button:hover {
+  background-color: #5100b8;
+}
+
+@media screen and (max-width: 767px) {
+  .popup__increase-ticket-button {
+    width: 44px;
+    height: 44px;
+    background-image: url(../../../images/plus-icon-mobile.svg);
+  }
+}

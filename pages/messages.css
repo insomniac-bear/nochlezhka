@@ -129,3 +129,10 @@
 @import url(../blocks/popup/__offer/_color/_blue/popup__offer_color_blue.css);
 @import url(../blocks/popup/__pay-button/popup__pay-button.css);
 @import url(../blocks/popup/__pay-button-text/popup__pay-button-text.css);
+@import url(../blocks/popup/__buy-ticket-amount/popup__buy-ticket-amount.css);
+@import url(../blocks/popup/__buy-ticket-container/popup__buy-ticket-container.css);
+@import url(../blocks/popup/__buy-ticket-price/popup__buy-ticket-price.css);
+@import url(../blocks/popup/__decrease-ticket-button/popup__decrease-ticket-button.css);
+@import url(../blocks/popup/__increase-ticket-button/popup__increase-ticket-button.css);
+@import url(../blocks/popup/__ticket-amount-field/popup__ticket-amount-field.css);
+@import url(../blocks/popup/__ticket-amount-field/_error/popup__ticket-amount-field_error.css);

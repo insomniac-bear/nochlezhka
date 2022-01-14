@@ -7,6 +7,10 @@ const formChangeCity = popupChangeCity.querySelector('.popup__change-city-form')
 const labelCity = formChangeCity.querySelectorAll('.popup__form-radio');
 const cityName = popupMenu.querySelector('.popup__city-name');
 const header = document.querySelector('.header');
+const inputContainer = document.querySelector(".popup__buy-ticket-amount");
+const buttonRemove = inputContainer.querySelector(".popup__decrease-ticket-button");
+const buttonAdd = inputContainer.querySelector(".popup__increase-ticket-button");
+let inputField = inputContainer.querySelector(".popup__ticket-amount-field");
 
 function openPopup (popup) {
   popup.classList.add('popup_opened');
@@ -54,3 +58,39 @@ function getCheckedRadio () {
     }
   });
 }
+
+function validate() {
+  if (inputField.value >= 1) {
+    inputField.classList.remove("popup__ticket-amount-field_error");
+  } else {
+    inputField.classList.add("popup__ticket-amount-field_error");
+  }
+}
+
+inputField.onfocus = function () {
+  validate();
+};
+
+inputField.onblur = function () {
+  if (inputField.value < 0) {
+    inputField.focus();
+  }
+  validate();
+};
+
+function increaseTicket() {
+  inputField.value = ++inputField.value;
+  validate();
+}
+
+function decreaseTicket() {
+  if (inputField.value <= 1) {
+    return;
+  }
+  validate();
+  inputField.value = --inputField.value;
+}
+
+validate();
+buttonAdd.addEventListener("click", increaseTicket);
+buttonRemove.addEventListener("click", decreaseTicket);

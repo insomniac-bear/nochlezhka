@@ -58,8 +58,8 @@
         <ul class="events__cards-container">
           <li class="events__card">
             <button type="button" aria-label="Мне нравится" class="events__like-button"></button>
-            <a href="#" class="events__card-image-link"><img src="./images/events-lecture.png"
-                alt="Иллюстрация к лекции" class="events__card-image"></a>
+            <a href="#" class="events__card-image-link"><img src="./images/events-lecture.png" alt="Иллюстрация к лекции"
+                class="events__card-image"></a>
             <div class="events__card-nameplate">
               <div class="events__card-details-container">
                 <p class="events__card-detail events__card-detail_type_category">лекция</p>
@@ -79,8 +79,8 @@
 
           <li class="events__card">
             <button type="button" aria-label="Мне нравится" class="events__like-button"></button>
-            <a href="#" class="events__card-image-link"><img src="./images/events-restaurant.png"
-                alt="Иллюстрация к лекции" class="events__card-image"></a>
+            <a href="#" class="events__card-image-link"><img src="./images/events-restaurant.png" alt="Иллюстрация к лекции"
+                class="events__card-image"></a>
             <div class="events__card-nameplate">
               <div class="events__card-details-container">
                 <p class="events__card-detail events__card-detail_type_category">еда и напитки</p>
@@ -190,12 +190,11 @@
                 Digital</a>
             </li>
             <li class="footer__list-element">
-              <a href="https://shishki.co/" target="_blank"
-                class="footer__link footer__link_type_regular">shishki.collective</a>
+              <a href="https://shishki.co/" target="_blank" class="footer__link footer__link_type_regular">shishki.collective</a>
             </li>
             <li class="footer__list-element">
-              <a href="https://practicum.yandex.ru/" target="_blank"
-                class="footer__link footer__link_type_regular">студентами Яндекс.Практикума</a>
+              <a href="https://practicum.yandex.ru/" target="_blank" class="footer__link footer__link_type_regular">студентами
+                Яндекс.Практикума</a>
             </li>
           </ul>
         </div>
@@ -268,8 +267,7 @@
             <span class="popup__pseudo-item"></span>
           </label>
           <label for="Sanct-Piterburg" class="popup__change-city-label"> <span>Санкт-Петербург</span>
-            <input type="radio" name="City" id="Sanct-Piterburg" value="Санкт-Петербург" class="popup__form-radio"
-              checked>
+            <input type="radio" name="City" id="Sanct-Piterburg" value="Санкт-Петербург" class="popup__form-radio" checked>
             <span class="popup__pseudo-item"></span>
           </label>
           <label for="Sochi" class="popup__change-city-label"> <span>Сочи</span>
@@ -314,12 +312,11 @@
           <button type="button" class="popup__sum-of-money page__button" value="3000">
             <span class="popup__sum-of-money-text">3000 &#8381;</span>
           </button>
-          <input type="text" name="sum-of-money" id="sum-of-money" placeholder="другая сумма"
-            class="popup__sum-of-money-input">
+          <input type="text" name="sum-of-money" id="sum-of-money" placeholder="другая сумма" class="popup__sum-of-money-input">
         </div>
         <p class="popup__donate-text">email</p>
-        <input type="email" name="email" id="email" placeholder="укажите почту для отправки чека"
-          class="popup__email-input" required>
+        <input type="email" name="email" id="email" placeholder="укажите почту для отправки чека" class="popup__email-input"
+          required>
         <p class="popup__donate-text">способ оплаты</p>
         <fieldset class="popup__payment-method">
           <label for="card" class="popup__payment-method-label">
@@ -356,7 +353,11 @@
         <p class="popup__buy-ticket-text">сумма и количество</p>
         <div class="popup__buy-ticket-container">
           <div class="popup__buy-ticket-price">500 &#8381;</div>
-          <div class="popup__buy-ticket-amount"></div>
+          <div class="popup__buy-ticket-amount">
+            <button class="popup__decrease-ticket-button"></button>
+            <input type="number" value="1" class="popup__ticket-amount-field">
+            <button class="popup__increase-ticket-button"></button>
+          </div>
         </div>
         <p class="popup__buy-ticket-text">email</p>
         <input type="email" name="email" placeholder="укажите почту для отправки чека" class="popup__email-input" required>
@@ -389,4 +390,5 @@
   <script src="scripts/messages.js"></script>
 
 </body>
+
 </html>
