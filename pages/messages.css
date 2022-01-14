@@ -111,6 +111,7 @@
 @import url(../blocks/popup/__buy-ticket-text/popup__buy-ticket-text.css);
 @import url(../blocks/popup/__donate-form/popup__donate-form.css);
 @import url(../blocks/popup/__buy-ticket-form/popup__buy-ticket-form.css);
+@import url(../blocks/popup/__email-text/popup__email-text.css);
 @import url(../blocks/popup/__slider/popup__slider.css);
 @import url(../blocks/popup/__donate-close-button/popup__donate-close-button.css);
 @import url(../blocks/popup/__donate-close-button-text/popup__donate-close-button-text.css);
