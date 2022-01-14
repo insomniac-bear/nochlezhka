@@ -1,13 +1,13 @@
 @font-face {
-  src: url("fonts/TT_Firs_Neue_Regular.woff2") format("woff2"),
-       url("fonts/TT_Firs_Neue_Regular.woff") format("woff");
+  src: url("./fonts/TT_Firs_Neue_Regular.woff2") format("woff2"),
+       url("./fonts/TT_Firs_Neue_Regular.woff") format("woff");
   font-family: "TT_Firs_Neue";
   font-weight: normal;
 }
 
 @font-face {
-  src: url("fonts/TT_Firs_Neue_Medium.woff2") format("woff2"),
-       url("fonts/TT_Firs_Neue_Medium.woff") format("woff");
+  src: url("./fonts/TT_Firs_Neue_Medium.woff2") format("woff2"),
+       url("./fonts/TT_Firs_Neue_Medium.woff") format("woff");
   font-family: "TT_Firs_Neue";
   font-weight: 500;
 }
