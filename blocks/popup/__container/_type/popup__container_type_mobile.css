@@ -1,17 +1,18 @@
-.popup__container_type_donate {
+.popup__container_type_mobile {
   margin: 108px auto 0;
   box-shadow: 0px 4px 12px rgba(59, 55, 72, 0.12);
   border-radius: 24px 24px 0px 0px;
   max-height: 808px;
-  background-color: #FCFAF7;
+  background-color: #fcfaf7;
   box-sizing: border-box;
   flex-direction: column;
   justify-content: center;
   padding-bottom: 20px;
+  max-width: 360px;
 }
 
 @media screen and (min-width: 768.98px) {
-  .popup__container_type_donate {
+  .popup__container_type_mobile {
     margin-top: 128px;
     max-width: 612px;
     max-height: 780px;
@@ -19,4 +20,3 @@
     padding-bottom: 40px;
   }
 }
-

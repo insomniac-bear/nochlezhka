@@ -296,13 +296,15 @@
   </div>
 
   <div class="popup popup_type_donate">
-    <div class="popup__container popup__container_type_donate">
+    <div class="popup__container popup__container_type_mobile">
       <form class="popup__donate-form" name="donate" id="donate">
         <img src="./images/slider.svg" alt="слайдер" class="popup__slider">
-        <button type="button" class="popup__close-button page__button">
+        <div class="popup__title-wrapper">
           <span class="popup__title">пожертвовать</span>
-          <img src="./images/close-icon.svg" alt="закрыть" class="popup__donate-close-button-picture">
-        </button>
+          <button type="button" class="popup__close-button page__button">
+            <img src="./images/close-icon.svg" alt="закрыть" class="popup__donate-close-button-picture">
+          </button>
+        </div>
         <p class="popup__donate-text">сумма</p>
         <div class="popup__sum-of-money-container">
           <button type="button" class="popup__sum-of-money popup__sum-of-money_active page__button" value="100">
@@ -341,7 +343,8 @@
           <a href="#" class="popup__offer popup__offer_color_blue page__link" target="_blank">оферты</a>,
           <a href="#" class="popup__offer popup__offer_color_blue page__link" target="_blank">политики</a>
           в отношении обработки и защиты персональных данных и даёте
-          <a href="#" class="popup__offer popup__offer_color_blue page__link" target="_blank">согласие</a> на их обработку</p>
+          <a href="#" class="popup__offer popup__offer_color_blue page__link" target="_blank">согласие</a> на их обработку
+        </p>
       </form>
       <button class="popup__pay-button page__button" type="submit" form="donate">
         <span class="popup__pay-button-text">перейти к оплате</span>
@@ -349,14 +352,16 @@
     </div>
   </div>
 
-  <div class="popup popup_type_buy-ticket popup_opened">
-    <div class="popup__container popup__container_type_buy-ticket">
+  <div class="popup popup_type_buy-ticket">
+    <div class="popup__container popup__container_type_mobile">
       <form class="popup__buy-ticket-form" name="buy-ticket" id="buy-ticket">
         <img src="./images/slider.svg" alt="слайдер" class="popup__slider">
-        <button type="button" class="popup__close-button page__button">
+        <div class="popup__title-wrapper">
           <span class="popup__title">купить билет</span>
-          <img src="./images/close-icon.svg" alt="закрыть" class="popup__donate-close-button-picture">
-        </button>
+          <button type="button" class="popup__close-button page__button">
+            <img src="./images/close-icon.svg" alt="закрыть" class="popup__donate-close-button-picture">
+          </button>
+        </div>
         <p class="popup__buy-ticket-text">сумма и количество</p>
         <div class="popup__buy-ticket-container">
           <div class="popup__buy-ticket-price">500 &#8381;</div>
@@ -385,7 +390,8 @@
           <a href="#" class="popup__offer popup__offer_color_blue page__link" target="_blank">оферты</a>,
           <a href="#" class="popup__offer popup__offer_color_blue page__link" target="_blank">политики</a>
           в отношении обработки и защиты персональных данных и даёте
-          <a href="#" class="popup__offer popup__offer_color_blue page__link" target="_blank">согласие</a> на их обработку</p>
+          <a href="#" class="popup__offer popup__offer_color_blue page__link" target="_blank">согласие</a> на их обработку
+        </p>
       </form>
       <button class="popup__pay-button page__button" type="submit" form="buy-ticket">
         <span class="popup__pay-button-text">перейти к оплате</span>
