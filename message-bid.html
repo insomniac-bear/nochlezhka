@@ -203,6 +203,7 @@
             </li>
             <li class="footer__list-element">
               <a href="https://practicum.yandex.ru/" target="_blank" class="footer__link footer__link_type_regular">студентами Яндекс.Практикума</a>
+            </li>
           </ul>
         </div>
         <div class="footer__block">
@@ -348,7 +349,7 @@
     </div>
   </div>
 
-  <div class="popup popup_type_buy-ticket">
+  <div class="popup popup_type_buy-ticket popup_opened">
     <div class="popup__container popup__container_type_buy-ticket">
       <form class="popup__buy-ticket-form" name="buy-ticket" id="buy-ticket">
         <img src="./images/slider.svg" alt="слайдер" class="popup__slider">
@@ -360,9 +361,9 @@
         <div class="popup__buy-ticket-container">
           <div class="popup__buy-ticket-price">500 &#8381;</div>
           <div class="popup__buy-ticket-amount">
-            <button class="popup__decrease-ticket-button"></button>
+            <button type="button" class="popup__decrease-ticket-button"></button>
             <input type="number" value="1" class="popup__ticket-amount-field">
-            <button class="popup__increase-ticket-button"></button>
+            <button type="button" class="popup__increase-ticket-button"></button>
           </div>
         </div>
         <p class="popup__buy-ticket-text">email</p>

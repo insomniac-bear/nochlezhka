@@ -96,7 +96,7 @@ const sendDonationData = () => {
 const sendPurchaseData = () => {
   const email = inputBuyerEmail.value;
   const paymentMethod = popupBuyTicket.querySelector('input[type=radio]:checked').value;
-  const amount = 1;
+  const amount = inputField.value;
 
   console.log(`Кол-во билетов: ${amount}, Email: ${email}, Способ оплаты: ${paymentMethod}`);
 };
