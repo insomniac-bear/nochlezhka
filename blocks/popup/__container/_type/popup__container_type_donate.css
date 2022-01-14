@@ -1,4 +1,4 @@
-.popup__container_type_mobile {
+.popup__container_type_donate {
   margin: 108px auto 0;
   box-shadow: 0px 4px 12px rgba(59, 55, 72, 0.12);
   border-radius: 24px 24px 0px 0px;
@@ -12,10 +12,10 @@
 }
 
 @media screen and (min-width: 768.98px) {
-  .popup__container_type_mobile {
+  .popup__container_type_donate {
     margin-top: 128px;
     max-width: 612px;
-    max-height: 780px;
+    max-height: 777px;
     border-radius: 24px;
     padding-bottom: 40px;
   }

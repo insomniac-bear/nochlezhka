@@ -1,4 +1,4 @@
-.popup__donate-form {
+.popup__form {
   margin: 0 auto;
   width: 100%;
   height: 100%;
@@ -9,29 +9,30 @@
   border-radius: 24px 24px 0px 0px;
   text-align: center;
   overflow-y: scroll;
+  padding: 16px 16px 0;
 }
 
 @media screen and (min-width: 768.98px) {
-  .popup__donate-form {
+  .popup__form {
     padding: 40px 40px 0;
     box-shadow: none;
   }
 }
 
-.popup__donate-form::-webkit-scrollbar-track {
+.popup__form::-webkit-scrollbar-track {
   background-color: rgba(0, 0, 0, 0);
 }
 
-.popup__donate-form::-webkit-scrollbar-thumb {
+.popup__form::-webkit-scrollbar-thumb {
   -webkit-border-radius: 0px;
   border-radius: 0px;
   background-color: #6dc0c8;
 }
 
-.popup__donate-form::-webkit-scrollbar-thumb:hover {
+.popup__form::-webkit-scrollbar-thumb:hover {
   background-color: #56999f;
 }
 
-.popup__donate-form::-webkit-scrollbar {
+.popup__form::-webkit-scrollbar {
   width: 4px;
 }
