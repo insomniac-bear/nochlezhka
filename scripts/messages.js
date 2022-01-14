@@ -8,6 +8,10 @@ const sumOfMoneyButton = popupDonate.querySelectorAll('.popup__sum-of-money');
 const inputDonationSum = popupDonate.querySelector('.popup__sum-of-money-input');
 const inputDonatorEmail = popupDonate.querySelector('.popup__email-input');
 const inputBuyerEmail = popupBuyTicket.querySelector('.popup__email-input');
+const inputContainer = document.querySelector(".popup__buy-ticket-amount");
+const buttonRemove = inputContainer.querySelector(".popup__decrease-ticket-button");
+const buttonAdd = inputContainer.querySelector(".popup__increase-ticket-button");
+let inputField = inputContainer.querySelector(".popup__ticket-amount-field");
 
 openDonateButtonInPopup.addEventListener('click', function () {
   closePopup(popupMenu);
@@ -96,3 +100,39 @@ const sendPurchaseData = () => {
 
   console.log(`Кол-во билетов: ${amount}, Email: ${email}, Способ оплаты: ${paymentMethod}`);
 };
+
+function validateInputField() {
+  if (inputField.value >= 1) {
+    inputField.classList.remove("popup__ticket-amount-field_error");
+  } else {
+    inputField.classList.add("popup__ticket-amount-field_error");
+  }
+}
+
+inputField.onfocus = function () {
+  validateInputField();
+};
+
+inputField.onblur = function () {
+  if (inputField.value < 0) {
+    inputField.focus();
+  }
+  validateInputField();
+};
+
+function increaseTicket() {
+  inputField.value = ++inputField.value;
+  validateInputField();
+}
+
+function decreaseTicket() {
+  if (inputField.value <= 1) {
+    return;
+  }
+  validateInputField();
+  inputField.value = --inputField.value;
+}
+
+validateInputField();
+buttonAdd.addEventListener("click", increaseTicket);
+buttonRemove.addEventListener("click", decreaseTicket);
