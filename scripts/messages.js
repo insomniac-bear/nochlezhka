@@ -61,7 +61,7 @@ window.addEventListener('scroll', () => {
   prevScroll = curScroll;
 });
 
-const donateFormElement = document.querySelector('.popup__donate-form');
+const donateFormElement = document.querySelector('#donate');
 
 donateFormElement.addEventListener('submit', (evt) => {
   evt.preventDefault();
@@ -70,7 +70,7 @@ donateFormElement.addEventListener('submit', (evt) => {
   donateFormElement.reset();
 });
 
-const buyTicketForm = document.querySelector('.popup__buy-ticket-form');
+const buyTicketForm = document.querySelector('#buy-ticket');
 
 buyTicketForm.addEventListener('submit', (evt) => {
   evt.preventDefault();
