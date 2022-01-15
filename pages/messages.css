@@ -42,8 +42,6 @@
 @import url(../blocks/message/__description/message__description.css);
 @import url(../blocks/message/__description/_page/message__description_page_error.css);
 
-
-
 @import url(../blocks/events/events.css);
 @import url(../blocks/events/__wrapper/events__wrapper.css);
 @import url(../blocks/events/__title/events__title.css);
@@ -85,11 +83,15 @@
 /* popup */
 @import url(../blocks/popup/popup.css);
 @import url(../blocks/popup/_opened/popup_opened.css);
+@import url(../blocks/popup/__form/popup__form.css);
 @import url(../blocks/popup/___title/popup__title.css);
+@import url(../blocks/popup/__title-wrapper/popup__title-wrapper.css);
 @import url(../blocks/popup/__close-button/popup__close-button.css);
 @import url(../blocks/popup/_type/_menu/popup_type_menu.css);
 @import url(../blocks/popup/_type/_change-city/popup_type_change-city.css);
 @import url(../blocks/popup/__container/popup__container.css);
+@import url(../blocks/popup/__container/_type/popup__container_type_buy-ticket.css);
+@import url(../blocks/popup/__container/_type/popup__container_type_donate.css);
 @import url(../blocks/popup/__content/popup__content.css);
 @import url(../blocks/popup/__navigation-text/popup__navigation-text.css);
 @import url(../blocks/popup/__change-city-button/popup__change-city-button.css);
@@ -106,8 +108,6 @@
 @import url(../blocks/popup/__change-city-label/popup__change-city-label.css);
 @import url(../blocks/popup/__form-radio/popup__form-radio.css);
 @import url(../blocks/popup/__pseudo-item/popup__pseudo-item.css);
-@import url(../blocks/popup/__container/_type/_donate/popup__container_type_donate.css);
-@import url(../blocks/popup/__container/_type/_buy-ticket/popup__container_type_buy-ticket.css);
 @import url(../blocks/popup/__buy-ticket-text/popup__buy-ticket-text.css);
 @import url(../blocks/popup/__donate-form/popup__donate-form.css);
 @import url(../blocks/popup/__buy-ticket-form/popup__buy-ticket-form.css);

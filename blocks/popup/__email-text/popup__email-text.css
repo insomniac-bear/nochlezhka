@@ -1,19 +1,19 @@
-.popup__email-text{
-    margin: 32px auto 12px;
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 28px;
-    color: #3B3748;
-    max-width: 320px;
-    width: 100%;
-    text-align: left;
+.popup__email-text {
+  margin: 32px auto 12px;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  color: #3b3748;
+  max-width: 320px;
+  width: 100%;
+  text-align: left;
 }
 
 @media screen and (min-width: 768.98px) {
-    .popup__email-text {
-        max-width: 532px;
-        margin: 32px auto 16px;
-        font-size: 32px;
-        line-height: 36px;
-    }
+  .popup__email-text {
+    max-width: 532px;
+    margin: 27px auto 16px;
+    font-size: 32px;
+    line-height: 36px;
+  }
 }
