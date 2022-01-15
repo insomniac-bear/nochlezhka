@@ -2,6 +2,7 @@
   display: inline-block;
   margin: 0;
   padding: 11px 22px;
+  max-width: 420px;
   color: #fff;
   font-size: 18px;
   font-weight: 500;
