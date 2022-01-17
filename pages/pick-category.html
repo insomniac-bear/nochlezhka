@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Гедонизмфест</title>
+    <link rel="stylesheet" href="./messages.css" />
+    <link rel="stylesheet" href="./pick-category.css" />
+  </head>
+  <body class="page">
+    <header class="header">
+      <div class="header__container">
+        <img src="./images/logo.svg" alt="logo" class="header__logo">
+        <div class="header__menu">
+          <button type="button" class="header__location-button page__button">
+            <img src="./images/location.svg" alt="location" class="header__location-image">
+            <span class="header__location-button-text">Санкт-Петербург</span>
+          </button>
+          <nav class="header__navigation">
+            <a class="header__navigation-link page__link" href="#">
+              <p class="header__link-text">куда пойти</p>
+            </a>
+            <a class="header__navigation-link page__link" href="#">
+              <p class="header__link-text">стать участником</p>
+            </a>
+            <a class="header__navigation-link page__link" href="#">
+              <p class="header__link-text">о фестивале</p>
+            </a>
+          </nav>
+          <a class="header__link page__link" href="#" target="_blank">
+            <img src="./images/like.svg" alt="like" class="header__like-image">
+            <p class="header__link-text">хочу пойти</p>
+          </a>
+          <button class="header__menu-button page__button" type="button">
+            <img src="./images/menu.svg" alt="menu">
+          </button>
+          <button class="header__donate-button page__button" type="button">
+            <span class="header__donate-text">поддержать</span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+      <main class="content content_place_category">
+        <h1 class="content__title content__title_hideable">стать участником</h1>
+        <div class="form">
+          <div class="form__container">
+            <p class="form__step">шаг 1 из 4</p>
+            <div class="form__instruction">
+              <p class="form__heading">выберите категорию</p>
+            </div>
+
+            <form class="form__form" id="pick-category" name="pick-category">
+              <fieldset class="form__input-container form__category">
+                <label class="form-input radio-button">
+                  <input class="form__radio" type="radio" name="category_cafe" value="cafe" />
+                  <span>кафе/бар/ресторан</span>
+                  <span class="form-input__checker"></span>
+                </label>
+
+                <label class="form-input radio-button">
+                  <input class="form__radio" type="radio" name="category_master-class" value="master-class" />
+                  <span>мастер-класс/лекция</span>
+                  <span class="form-input__checker"></span>
+                </label>
+
+                <label class="form-input radio-button">
+                  <input class="form__radio" type="radio" name="category_party" value="party" />
+                  <span>посиделки/вечеринка</span>
+                  <span class="form-input__checker"></span>
+                </label>
+
+                <label class="form-input radio-button">
+                  <input class="form__radio" type="radio" name="category_other" value="other" />
+                  <span>другое</span>
+                  <span class="form-input__checker"></span>
+                </label>
+              </fieldset>
+            </form>
+          </div>
+          <div class="form__controls">
+            <button type="button" class="form-input form__control form__control_type_back" onclick="location.href='../index.html';">
+              отмена
+            </button>
+            <button
+              type="submit"
+              id="category-submit"
+              form="pick-category"
+              class="form-input form__control form__control_type_submit"
+            ></button>
+          </div>
+        </div>
+      </main>
+
+      <footer class="footer">
+        <div class="footer__wrapper">
+          <div class="footer__illustration"></div>
+          <div class="footer__block-container">
+            <div class="footer__block">
+              <h2 class="footer__title">Организатор:</h2>
+              <ul class="footer__link-list">
+                <li class="footer__list-element">
+                  <a href="https://homeless.ru/" target="_blank" class="footer__link footer__link_type_regular">Ночлежка</a>
+                </li>
+                <li class="footer__list-element">
+                  <a href="mailto:info@hedonismfest.ru" class="footer__link footer__link_type_mail">
+                    <p class="footer__link-text">info@hedonismfest.ru</p>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__block">
+              <h2 class="footer__title">Сделано с любовью:</h2>
+              <ul class="footer__link-list">
+                <li class="footer__list-element">
+                  <a href="https://fastsol.digital/" target="_blank" class="footer__link footer__link_type_regular">Fastsol Digital</a>
+                </li>
+                <li class="footer__list-element">
+                  <a href="https://shishki.co/" target="_blank" class="footer__link footer__link_type_regular">shishki.collective</a>
+                </li>
+                <li class="footer__list-element">
+                  <a href="https://practicum.yandex.ru/" target="_blank" class="footer__link footer__link_type_regular">студентами Яндекс.Практикума</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__block">
+              <h2 class="footer__title">Мы в соцсетях:</h2>
+              <ul class="footer__link-list footer__link-list_type_social">
+                <li class="footer__list-element">
+                  <a href="https://www.facebook.com/Homeless.ru" target="_blank" class="footer__link footer__link_type_social">
+                    <img class="footer__social-icon" src="./images/facebook-logo.svg" alt="Логотип Facebook">
+                  </a>
+                </li>
+                <li class="footer__list-element">
+                  <a href="https://www.instagram.com/nochlezhka/" target="_blank" class="footer__link footer__link_type_social">
+                    <img class="footer__social-icon" src="./images/instagram-logo.svg" alt="Логотип Instagram">
+                  </a>
+                </li>
+                <li class="footer__list-element">
+                  <a href="https://vk.com/club239781" target="_blank" class="footer__link footer__link_type_social">
+                    <img class="footer__social-icon" src="./images/vkontakte-logo.svg" alt="Логотип Вконтакте">
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+    <script src="../scripts/script.js"></script>
+  </body>
+</html>
