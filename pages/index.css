@@ -61,7 +61,7 @@
 @import url(../blocks/popup/__change-city-label/popup__change-city-label.css);
 @import url(../blocks/popup/__form-radio/popup__form-radio.css);
 @import url(../blocks/popup/__pseudo-item/popup__pseudo-item.css);
-@import url(../blocks/popup/__container/_type/_donate/popup__container_type_donate.css);
+@import url(../blocks/popup/__container/_type/popup__container_type_donate.css);
 @import url(../blocks/popup/__donate-form/popup__donate-form.css);
 @import url(../blocks/popup/__slider/popup__slider.css);
 @import url(../blocks/popup/__donate-close-button/popup__donate-close-button.css);
