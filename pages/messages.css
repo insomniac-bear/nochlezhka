@@ -8,7 +8,7 @@
 @import url(../blocks/page/__link/page__link.css);
 @import url(../blocks/page/__button/page__button.css);
 
-@import url(../blocks/content/content.css);
+@import url(../blocks/content-messages/content-messages.css);
 
 @import url(../blocks/header/header.css);
 @import url(../blocks/header/__container/header__container.css);
