@@ -1,0 +1,21 @@
+.thanks-screen {
+  min-height: 632px;
+  background-color: #7100FF;
+  background-position: right;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: flex-start;
+  flex-direction: row-reverse;
+  max-width: 1440px;
+}
+
+@media screen and (max-width: 600px) {
+  .thanks-screen {
+    min-height: 560px;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+}

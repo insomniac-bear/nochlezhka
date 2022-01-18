@@ -1,0 +1,16 @@
+.thanks__title {
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 52px;
+  color: white;
+  margin: 0;
+}
+
+@media screen and (max-width: 600px) {
+  .thanks__title {
+    font-size: 32px;
+    line-height: 36px;
+    max-width: 420px;
+    margin-top: 10px;
+  }
+}

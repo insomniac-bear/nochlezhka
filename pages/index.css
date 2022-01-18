@@ -31,6 +31,12 @@
 @import url(../blocks/main-screen/__text/main-screen__text.css);
 @import url(../blocks/main-screen/__learn-more/main-screen__learn-more.css);
 
+@import url(../blocks/thanks/thanks-screen.css);
+@import url(../blocks/thanks/__text/thanks__text.css);
+@import url(../blocks/thanks/__title/thanks__title.css);
+@import url(../blocks/thanks/__subtitle/thanks__subtitle.css);
+@import url(../blocks/thanks/__img/thanks__img.css);
+
 @import url(../blocks/about-action/about-action.css);
 @import url(../blocks/about-action/__title/about-action__title.css);
 @import url(../blocks/about-action/__text-container/about-action__text-container.css);
@@ -85,9 +91,11 @@
 @import url(../blocks/events/events.css);
 @import url(../blocks/events/__wrapper/events__wrapper.css);
 @import url(../blocks/events/__title/events__title.css);
+@import url(../blocks/events/__title-thanks/events__title-thanks.css);
 @import url(../blocks/events/__list/events__list.css);
 @import url(../blocks/events/__link/events__link.css);
 @import url(../blocks/events/__link/_type/events__link_type_view-all.css);
+@import url(../blocks/events/__link/_to-main/events__link_to-main.css);
 @import url(../blocks/events/__link-arrow/events__link-arrow.css);
 @import url(../blocks/events/__cards-container/events__cards-container.css);
 @import url(../blocks/events/__card/events__card.css);
