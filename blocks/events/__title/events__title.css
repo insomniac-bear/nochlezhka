@@ -4,6 +4,7 @@
     line-height: 52px;
     font-size: 48px;
     font-weight: 500;
+    letter-spacing: -0.01em;
     color: #3B3748;
 }
 
@@ -12,5 +13,6 @@
         margin: 40px 20px 20px;
         line-height: 36px;
         font-size: 32px;
+        letter-spacing: unset;
     }
 }
