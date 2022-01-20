@@ -3,6 +3,7 @@
   font-weight: 500;
   font-size: 24px;
   line-height: 28px;
+  letter-spacing: -0.01em;
   color: #3b3748;
   max-width: 320px;
   width: 100%;
@@ -15,6 +16,7 @@
     margin: 32px auto 16px;
     font-size: 32px;
     line-height: 36px;
+    letter-spacing: unset;
   }
   .popup__donate-text:first-of-type {
     margin: 20px auto 16px;
