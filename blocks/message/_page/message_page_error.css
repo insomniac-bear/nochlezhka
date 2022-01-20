@@ -5,6 +5,5 @@ background-image: url(../../../images/404_background.svg);
 @media screen and (max-width: 930px) {
   .message_page_error {
     background-image: url(../../../images/404_mobile_background.svg);
-    background-position: center 40px;
   }
 }
