@@ -1,0 +1,14 @@
+.main-screen_page_message {
+  background-image: none;
+  max-width: 100%;
+  padding: 160px 0;
+  min-height: initial;
+  justify-content: unset;
+}
+
+@media screen and (max-width: 930px) {
+  .main-screen_page_message {
+    min-height: 536px;
+    padding: 0;
+  }
+}

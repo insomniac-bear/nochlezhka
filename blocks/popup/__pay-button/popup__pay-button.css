@@ -1,0 +1,20 @@
+.popup__pay-button {
+  margin: 20px auto 0;
+  max-width: 320px;
+  width: 100%;
+  border: none;
+  background-color: #7100FF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 0;
+  border-radius: 22px;
+  box-sizing: border-box;
+  box-shadow: 0px -8px 32px rgba(59, 55, 72, 0.12);
+}
+@media screen and (min-width: 768.98px) {
+  .popup__pay-button {
+    margin-top: 32px;
+    max-width: 532px;
+  }
+}

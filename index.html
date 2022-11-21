@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Гедонизм-фест</title>
-  <link rel="stylesheet" href="pages/index.css"> <!-- файл стилей -->
+  <link rel="stylesheet" href="./pages/index.css"> <!-- файл стилей -->
 </head>
 
 <body class="page">
@@ -21,7 +21,7 @@
           <a class="header__navigation-link page__link" href="#">
             <p class="header__link-text">куда пойти</p>
           </a>
-          <a class="header__navigation-link page__link" href="#">
+          <a class="header__navigation-link page__link" href="./participant.html">
             <p class="header__link-text">стать участником</p>
           </a>
           <a class="header__navigation-link page__link" href="#">
@@ -35,8 +35,7 @@
         <button class="header__menu-button page__button" type="button">
           <img src="./images/menu.svg" alt="menu">
         </button>
-        <a class="page__link" href="./gratitude-page.html">
-        <button class="header__donate-button page__button" type="button">
+        <button class="header__donate-button page__button" type="button" onclick="location.href='./message-help.html'">
           <span class="header__donate-text">поддержать</span>
         </button>
       </a>
@@ -44,7 +43,7 @@
     </div>
   </header>
 
-  <main class="content">
+  <main class="content-messages">
 
     <section class="main-screen" aria-label="learn-more">
       <p class="main-screen__text">узнать больше</p>
@@ -216,7 +215,7 @@
               или соберите друзей у себя дома. Помогать просто, узнайте подробности и заполните форму
             </p>
           </div>
-          <button type="button" class="host-event__button">стать участником</button>
+          <button type="button" class="host-event__button" onclick="location.href='./participant.html'">стать участником</button>
         </div>
       </div>
     </section>
@@ -448,11 +447,11 @@
             <span>PayPal</span>
           </label>
         </fieldset>
-        <p class="popup__offer">Нажимая кнопку «пожертвовать» вы соглашаетесь с условиями <a href="#"
+        <p class="popup__offer">Нажимая кнопку «пожертвовать» вы соглашаетесь с условиями <a href="#"
             class="popup__offer popup__offer_color_blue page__link" target="_blank">оферты</a>, <a href="#"
-            class="popup__offer popup__offer_color_blue page__link" target="_blank">политики</a> в отношении обработки
-          и защиты персональных данных и даёте <a href="#" class="popup__offer popup__offer_color_blue page__link"
-            target="_blank">согласие</a> на их обработку</p>
+            class="popup__offer popup__offer_color_blue page__link" target="_blank">политики</a> в отношении обработки
+          и защиты персональных данных и даёте <a href="#" class="popup__offer popup__offer_color_blue page__link"
+            target="_blank">согласие</a> на их обработку</p>
       </form>
       <button class="popup__donate-button page__button" type="submit" form="donate">
         <span class="popup__donate-button-text">перейти к оплате</span>
@@ -460,7 +459,8 @@
     </div>
   </div>
 
-  <script src="scripts/index.js"></script>
+  <script src="./scripts/utils.js"></script>
+  <script src="./scripts/index.js"></script>
 </body>
 
 </html>

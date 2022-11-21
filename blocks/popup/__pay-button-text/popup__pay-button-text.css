@@ -1,0 +1,14 @@
+.popup__pay-button-text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #FCFAF7;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 768.98px) {
+  .popup__pay-button-text {
+    font-size: 18px;
+    line-height: 24px;
+  }
+}

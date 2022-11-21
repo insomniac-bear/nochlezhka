@@ -1,0 +1,28 @@
+.message__link {
+  display: inline-block;
+  margin: 0;
+  padding: 11px 22px;
+  max-width: 420px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.33;
+  text-decoration: none;
+  border: 2px solid #fff;
+  border-radius: 26px;
+  box-sizing: border-box;
+  transition: opacity ease .5s;
+}
+
+.message__link:hover {
+  opacity: .3;
+}
+
+@media screen and (max-width: 879px) {
+  .message__link {
+    padding: 10px 28px;
+    font-size: 16px;
+    line-height: 1.25;
+    border-radius: 22px;
+  }
+}
